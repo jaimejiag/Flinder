@@ -1,14 +1,13 @@
 package com.jaime.fisheri;
 
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.jaime.fisheri.fragments.CourseFragment;
 import com.jaime.fisheri.fragments.HomeFragment;
-import com.jaime.fisheri.fragments.SettingsFragment;
+import com.jaime.fisheri.fragments.ProfileFragment;
 
 public class MainMenuActivity extends AppCompatActivity {
     private BottomNavigationView bnvNavigation;
@@ -40,7 +39,7 @@ public class MainMenuActivity extends AppCompatActivity {
                         break;
 
                     case R.id.action_settings:
-                        SettingsFragment settings = new SettingsFragment();
+                        ProfileFragment settings = new ProfileFragment();
                         ft.replace(R.id.activity_main_menu, settings).commit();
                         break;
                 }

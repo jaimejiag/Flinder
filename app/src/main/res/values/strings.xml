@@ -11,7 +11,7 @@
     <!-- Bottom Menu -->
     <string name="home_menu">Principal</string>
     <string name="course_menu">Curso</string>
-    <string name="settings_menu">Ajustes</string>
+    <string name="profile_menu">Perfil</string>
 
     <!-- Buttons -->
     <string name="showCalendar_btn">Ver calendario</string>
