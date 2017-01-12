@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fisheri</string>
+
+    <!-- Login -->
+    <string name="email_login">Email</string>
+    <string name="password_login">Contraseña</string>
+    <string name="btnLogin_login">Iniciar Sesión</string>
+    <string name="btnSignUp_login">Regístrate</string>
+    <string name="rememberPassword_login"><u>¿Has olvidado tu contraseña?</u></string>
+
+    <!-- Bottom Menu -->
+    <string name="home_menu">Principal</string>
+    <string name="course_menu">Curso</string>
+    <string name="settings_menu">Ajustes</string>
+
+    <!-- Buttons -->
+    <string name="showCalendar_btn">Ver calendario</string>
+</resources>
