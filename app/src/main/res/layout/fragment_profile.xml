@@ -2,13 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.jaime.fisheri.fragments.ProfileFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txv_fragmentSettings"
-        android:text="Fragment Settings"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"/>
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/profile_avatar"
+        app:siRadius="20dp"
+        app:siBorderWidth="0dp"
+        app:siSquare="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"/>
+
+
 </RelativeLayout>
