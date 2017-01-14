@@ -47,7 +47,7 @@
         android:background="@drawable/shape_rounded_rectangle"
         android:backgroundTint="@color/green"
         android:text="@string/btnLogin_login"
-        android:textColor="@color/white" />
+        android:textColor="@android:color/white" />
 
     <TextView
         android:id="@+id/txv_rememberPassword"
@@ -57,7 +57,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="6dp"
         android:text="@string/rememberPassword_login"
-        android:textColor="@color/white" />
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btn_signUp"
@@ -70,5 +70,5 @@
         android:background="@drawable/shape_rounded_rectangle"
         android:backgroundTint="@color/green"
         android:text="@string/btnSignUp_login"
-        android:textColor="@color/white" />
+        android:textColor="@android:color/white" />
 </RelativeLayout>

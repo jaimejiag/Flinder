@@ -4,9 +4,21 @@
     android:layout_height="match_parent"
     tools:context="com.jaime.fisheri.fragments.HomeFragment">
 
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="455dp"
         android:id="@+id/rv_cardsList"
-        android:scrollbars="vertical"/>
+        android:scrollbars="vertical"
+        android:layout_marginTop="57dp"/>
 </RelativeLayout>

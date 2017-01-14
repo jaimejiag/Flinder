@@ -15,4 +15,15 @@
 
     <!-- Buttons -->
     <string name="showCalendar_btn">Ver calendario</string>
+
+    <!-- Profile -->
+    <string name="subject_profile">Asignaturas</string>
+    <string name="about_profile">Acerca de</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <!-- About -->
+    <string name="version_about">Versión</string>
+    <string name="author_about">Autor</string>
+    <string name="country_about">España</string>
+    <string name="gitgub_about">Mi Github</string>
 </resources>
