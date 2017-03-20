@@ -1,4 +1,4 @@
-package com.jaime.fisheri;
+package com.jaime.flinder;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

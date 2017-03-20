@@ -1,7 +1,6 @@
-package com.jaime.fisheri.fragments;
+package com.jaime.flinder.fragments;
 
 
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -12,7 +11,7 @@ import android.view.ViewGroup;
 import android.app.Fragment;
 
 
-import com.jaime.fisheri.R;
+import com.jaime.flinder.R;
 
 
 public class AboutFragment extends Fragment {
@@ -54,6 +53,7 @@ public class AboutFragment extends Fragment {
             activity.setTitle(R.string.about_profile);
         }
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

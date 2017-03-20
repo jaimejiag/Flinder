@@ -1,4 +1,4 @@
-package com.jaime.fisheri.POJO;
+package com.jaime.flinder.POJO;
 
 /**
  * Created by jaime on 05/01/2017.

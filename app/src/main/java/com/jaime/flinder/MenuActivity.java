@@ -1,4 +1,4 @@
-package com.jaime.fisheri;
+package com.jaime.flinder;
 
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.app.FragmentTransaction;
 
-import com.jaime.fisheri.fragments.CourseFragment;
-import com.jaime.fisheri.fragments.HomeFragment;
-import com.jaime.fisheri.fragments.ProfileFragment;
+import com.jaime.flinder.fragments.CourseFragment;
+import com.jaime.flinder.fragments.HomeFragment;
+import com.jaime.flinder.fragments.ProfileFragment;
 
-public class MainMenuActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity {
     private BottomNavigationView bnvNavigation;
 
     @Override

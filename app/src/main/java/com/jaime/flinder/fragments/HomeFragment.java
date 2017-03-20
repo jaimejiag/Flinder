@@ -1,4 +1,4 @@
-package com.jaime.fisheri.fragments;
+package com.jaime.flinder.fragments;
 
 
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.app.Fragment;
 
-import com.jaime.fisheri.R;
-import com.jaime.fisheri.adapters.HomeworkAdapter;
+import com.jaime.flinder.R;
+import com.jaime.flinder.adapters.HomeworkAdapter;
 
 
 public class HomeFragment extends Fragment {

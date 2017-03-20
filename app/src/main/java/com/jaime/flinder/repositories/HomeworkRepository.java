@@ -1,7 +1,7 @@
-package com.jaime.fisheri.repositories;
+package com.jaime.flinder.repositories;
 
-import com.jaime.fisheri.POJO.Homework;
-import com.jaime.fisheri.POJO.Subject;
+import com.jaime.flinder.POJO.Homework;
+import com.jaime.flinder.POJO.Subject;
 
 import java.util.ArrayList;
 

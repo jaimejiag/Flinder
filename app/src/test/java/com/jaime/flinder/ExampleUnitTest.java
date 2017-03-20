@@ -1,4 +1,4 @@
-package com.jaime.fisheri;
+package com.jaime.flinder;
 
 import org.junit.Test;
 

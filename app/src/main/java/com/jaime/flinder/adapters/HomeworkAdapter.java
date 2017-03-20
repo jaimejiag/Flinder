@@ -1,4 +1,4 @@
-package com.jaime.fisheri.adapters;
+package com.jaime.flinder.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.jaime.fisheri.POJO.Homework;
-import com.jaime.fisheri.R;
-import com.jaime.fisheri.repositories.HomeworkRepository;
+import com.jaime.flinder.POJO.Homework;
+import com.jaime.flinder.R;
+import com.jaime.flinder.repositories.HomeworkRepository;
 
 import java.util.ArrayList;
 

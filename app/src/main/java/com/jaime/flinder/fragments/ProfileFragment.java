@@ -1,4 +1,4 @@
-package com.jaime.fisheri.fragments;
+package com.jaime.flinder.fragments;
 
 
 import android.app.FragmentTransaction;
@@ -10,7 +10,7 @@ import android.app.Fragment;
 import android.widget.Button;
 
 
-import com.jaime.fisheri.R;
+import com.jaime.flinder.R;
 
 
 public class ProfileFragment extends Fragment {

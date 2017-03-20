@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fisheri</string>
+    <string name="app_name">Flinder</string>
 
     <!-- Login -->
     <string name="email_login">Email</string>
@@ -26,4 +26,7 @@
     <string name="author_about">Autor</string>
     <string name="country_about">España</string>
     <string name="gitgub_about">Mi Github</string>
+
+    <!-- Course -->
+    <string name="addSubject_course">Añadir asignatura</string>
 </resources>

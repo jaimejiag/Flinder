@@ -1,4 +1,4 @@
-package com.jaime.fisheri.fragments;
+package com.jaime.flinder.fragments;
 
 
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.app.Fragment;
 
 
-import com.jaime.fisheri.R;
+import com.jaime.flinder.R;
 
 
 public class CourseFragment extends Fragment {
@@ -16,6 +16,7 @@ public class CourseFragment extends Fragment {
     public CourseFragment() {
 
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
