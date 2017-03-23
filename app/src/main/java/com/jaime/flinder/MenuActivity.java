@@ -18,11 +18,11 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-
-
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        HomeFragment home = new HomeFragment();
-        ft.replace(R.id.activity_main_menu, home).commit();
+        if (savedInstanceState == null) {
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            HomeFragment home = new HomeFragment();
+            ft.replace(R.id.activity_main_menu, home).commit();
+        }
 
         bnvNavigation = (BottomNavigationView) findViewById(R.id.bnv_navigation);
         bnvNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -53,5 +53,6 @@ public class MenuActivity extends AppCompatActivity {
                 return true;
             }
         });
+
     }
 }

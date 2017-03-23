@@ -1,8 +1,36 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="510dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.jaime.flinder.fragments.CourseFragment">
+    
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/tb_course"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <TabLayout
+            android:id="@+id/tl_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_course"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -34,7 +62,8 @@
             android:id="@+id/lv_subjects"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_below="@id/line_add_subject" />
+            android:layout_below="@id/line_add_subject"
+            android:scrollbars="vertical"/>
 
         <View
             android:id="@+id/line_subjects"
@@ -46,11 +75,23 @@
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:background="@android:color/darker_gray" />
 
+        <Button
+            android:id="@+id/btn_to_calendar"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:padding="0dp"
+            android:text="@string/toCalendar_course"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/line_subjects"/>
+
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/pc_subjects_graph"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:layout_below="@id/line_subjects" />
+            android:layout_below="@id/btn_to_calendar"/>
     </RelativeLayout>
 
-</ScrollView>
+</android.support.design.widget.CoordinatorLayout>
