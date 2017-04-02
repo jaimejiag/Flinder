@@ -29,5 +29,7 @@
 
     <!-- Course -->
     <string name="addSubject_course">Añadir asignatura</string>
-    <string name="toCalendar_course">Ir al calendario</string>
+    <string name="homeworkWeight_course">Peso de tareas</string>
+    <string name="statistics_course">Estadísticas</string>
+
 </resources>
