@@ -42,7 +42,7 @@ public class CourseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        View rootView = inflater.inflate(R.layout.fragment_course, container, false);
+        View rootView = inflater.inflate(R.layout.view_course, container, false);
         setRetainInstance(true);
 
         vpCourse = (ViewPager) rootView.findViewById(R.id.vp_course);

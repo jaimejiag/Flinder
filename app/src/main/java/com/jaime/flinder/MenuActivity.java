@@ -1,6 +1,10 @@
 package com.jaime.flinder;
 
+import android.content.Intent;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -10,7 +14,7 @@ import com.jaime.flinder.fragments.CourseFragment;
 import com.jaime.flinder.fragments.HomeFragment;
 import com.jaime.flinder.fragments.ProfileFragment;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends FragmentActivity {
     private BottomNavigationView bnvNavigation;
 
     @Override
@@ -40,7 +44,7 @@ public class MenuActivity extends AppCompatActivity {
                     case R.id.action_course:
                         CourseFragment course = new CourseFragment();
                         ft.addToBackStack(null);
-                        ft.replace(R.id.activity_main_menu, course).commit();
+                        ft.add(R.id.activity_main_menu, course).commit();
                         break;
 
                     case R.id.action_settings:
