@@ -1,20 +1,16 @@
 package com.jaime.flinder;
 
-import android.content.Intent;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentTransaction;
 
 import com.jaime.flinder.fragments.CourseFragment;
 import com.jaime.flinder.fragments.HomeFragment;
 import com.jaime.flinder.fragments.ProfileFragment;
 
-public class MenuActivity extends FragmentActivity {
+public class MenuActivity extends AppCompatActivity {
     private BottomNavigationView bnvNavigation;
 
     @Override
@@ -23,7 +19,7 @@ public class MenuActivity extends FragmentActivity {
         setContentView(R.layout.activity_main_menu);
 
         if (savedInstanceState == null) {
-            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             HomeFragment home = new HomeFragment();
             ft.replace(R.id.activity_main_menu, home).commit();
         }
@@ -32,7 +28,7 @@ public class MenuActivity extends FragmentActivity {
         bnvNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
-                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 
                 switch (item.getItemId()) {
                     case R.id.action_home:
@@ -44,7 +40,7 @@ public class MenuActivity extends FragmentActivity {
                     case R.id.action_course:
                         CourseFragment course = new CourseFragment();
                         ft.addToBackStack(null);
-                        ft.add(R.id.activity_main_menu, course).commit();
+                        ft.replace(R.id.activity_main_menu, course).commit();
                         break;
 
                     case R.id.action_settings:

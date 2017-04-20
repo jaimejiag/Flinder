@@ -16,7 +16,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.jaime.flinder.MenuActivity"></activity>
-        <activity android:name=".CourseFragmentActivity"/>
     </application>
 
 </manifest>

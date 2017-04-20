@@ -8,7 +8,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 
 
 import com.jaime.flinder.MenuActivity;
@@ -57,7 +57,7 @@ public class CourseFragment extends Fragment {
 
 
     private void setupViewPager() {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(mContext.getSupportFragmentManager());
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new SubjectsFragment(), getResources().getString(R.string.subject_profile));
         adapter.addFragment(new StatiticsFragment(), getResources().getString(R.string.statistics_course));
         vpCourse.setAdapter(adapter);
