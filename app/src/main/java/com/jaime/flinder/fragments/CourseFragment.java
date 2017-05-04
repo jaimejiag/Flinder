@@ -14,7 +14,8 @@ import android.support.v4.app.Fragment;
 import com.jaime.flinder.MenuActivity;
 import com.jaime.flinder.R;
 import com.jaime.flinder.adapters.ViewPagerAdapter;
-import com.jaime.flinder.fragments.courseTabs.StatiticsFragment;
+import com.jaime.flinder.fragments.courseTabs.CalendarFragment;
+import com.jaime.flinder.fragments.courseTabs.StatisticsFragment;
 import com.jaime.flinder.fragments.courseTabs.SubjectsFragment;
 
 
@@ -59,7 +60,8 @@ public class CourseFragment extends Fragment {
     private void setupViewPager() {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new SubjectsFragment(), getResources().getString(R.string.subject_profile));
-        adapter.addFragment(new StatiticsFragment(), getResources().getString(R.string.statistics_course));
+        adapter.addFragment(new StatisticsFragment(), getResources().getString(R.string.statistics_course));
+        adapter.addFragment(new CalendarFragment(), getResources().getString(R.string.calendar_course));
         vpCourse.setAdapter(adapter);
     }
 }

@@ -19,12 +19,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class StatiticsFragment extends Fragment {
+public class StatisticsFragment extends Fragment {
     private PieChart pcGraph;
     private List<PieEntry> mEntries;
 
 
-    public StatiticsFragment() {
+    public StatisticsFragment() {
 
     }
 

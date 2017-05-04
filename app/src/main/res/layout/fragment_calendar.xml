@@ -1,0 +1,36 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jaime.flinder.fragments.courseTabs.CalendarFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txv_calendarDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Prueba"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            android:textAlignment="center"/>
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/ccv_calendar"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextSize="12sp"
+            app:compactCalendarBackgroundColor="@color/colorPrimary"
+            app:compactCalendarTextColor="#fff"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="@color/daySelected"
+            app:compactCalendarCurrentDayBackgroundColor="@color/colorPrimaryDark"
+            app:compactCalendarMultiEventIndicatorColor="#fff"
+            android:layout_below="@id/txv_calendarDate"
+            android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

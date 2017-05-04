@@ -2,6 +2,7 @@ package com.jaime.flinder.fragments;
 
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -53,12 +54,11 @@ public class HomeFragment extends Fragment {
         mRecycler.setHasFixedSize(true);
         mRecycler.setAdapter(mAdapter);
 
-        /*final FragmentActivity activity = (FragmentActivity) getActivity();
+        final AppCompatActivity activity = (AppCompatActivity) getActivity();
         activity.setSupportActionBar(mToolbar);
 
         if (activity.getSupportActionBar() != null) {
             activity.setTitle(R.string.app_name);
         }
-        */
     }
 }
